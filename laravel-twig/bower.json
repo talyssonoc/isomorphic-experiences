@@ -1,0 +1,19 @@
+{
+  "name": "laravel-twig",
+  "version": "0.0.1",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "requirejs": "2.1.8",
+    "requirejs-text": "2.0.13",
+    "twig.js": "0.8.4"
+  }
+}

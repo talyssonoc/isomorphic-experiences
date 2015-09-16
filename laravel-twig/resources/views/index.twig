@@ -1,0 +1,7 @@
+{% extends 'layouts/main' %}
+
+{% block body %}
+  <div data-server>
+    {{ component('my_component', { 'renderSource': 'server' }) }}
+  </div>
+{% endblock %}

@@ -15,9 +15,13 @@ This is a experience with isomorphic templates with Laravel and Twig/Twig.js
 
 ## Setup
 
-Run `php artisan key:generate`. It will create a new app key for you, save this somewhere for a while.
+Create a copy of `.env.example` called `.env`.
 
-Create a copy of `.env.example` called `.env` and put your app key there on the `APP_KEY` field.
+Run:
+
+```
+  $ php artisan key:generate
+```
 
 Then run:
 

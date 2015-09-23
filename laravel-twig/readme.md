@@ -15,19 +15,23 @@ This is a experience with isomorphic templates with Laravel and Twig/Twig.js
 
 ## Setup
 
-You gotta run:
+Run `php artisan key:generate`. It will create a new app key for you, save this somewhere for a while.
+
+Create a copy of `.env.example` called `.env` and put your app key there on the `APP_KEY` field.
+
+Then run:
 
 ```sh
   $ composer install
 ```
 
-Then:
+And then:
 
 ```sh
   $ npm install
 ```
 
-Then:
+And then:
 
 ```sh
   $ bower install
@@ -38,6 +42,8 @@ Alternatively you can run them at the same time:
 ```sh
   $ composer install && npm install && bower install
 ```
+
+## Running
 
 To start developing, open two terminal instances and run each one of these commands:
 

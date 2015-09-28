@@ -1,16 +1,19 @@
 define([
   'jquery',
-  'twig',
-  'text!components/my_component'
+  'component'
 ],
-function($, Twig, templateSource) {
-  var template = Twig.twig({
-    data: templateSource
-  });
+function($, component, myComponent, listProduct) {
+  $('[data-client]').append(
+    component('myComponent', {renderSource: 'client'})
+  );
 
-  var markup = template.render({
-    renderSource: 'client'
-  });
-
-  $('[data-server]').append(markup);
+  $('[data-product-list]').append(
+    component('listProduct', {
+      products: [
+        {name: 'Camiseta'},
+        {name: 'Boné'},
+        {name: 'Tênis'}
+      ]
+    })
+  );
 });

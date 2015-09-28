@@ -1,16 +1,14 @@
 define([
   'jquery',
-  'component',
-  'text!components/my_component',
-  'text!components/list_product',
+  'component'
 ],
 function($, component, myComponent, listProduct) {
   $('[data-client]').append(
-    component(myComponent, {renderSource: 'client'})
+    component('myComponent', {renderSource: 'client'})
   );
 
   $('[data-product-list]').append(
-    component(listProduct, {
+    component('listProduct', {
       products: [
         {name: 'Camiseta'},
         {name: 'Boné'},

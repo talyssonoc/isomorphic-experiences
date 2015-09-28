@@ -24,7 +24,7 @@ function(
   });
 
   var component = function(component, data) {
-    return Twig.twig({data: component}).render(data);
+    return Twig.twig({data: components[name]}).render(data);
   };
 
   return component;
